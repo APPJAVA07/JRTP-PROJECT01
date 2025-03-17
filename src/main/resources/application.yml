@@ -1,0 +1,32 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: 21-PlansApi
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: Dileep@07
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  
+
+server:
+  port: 5657
+
+plan-api:
+ messages:
+  planSaveSucc: "Plan saved successfully"
+  planSavedFail: "Plan save failed"
+  planUpdateSucc: "Plan updated successfully"
+  planUpdateFail: "Plan update failed"
+  planDeletedSucc: "Plan deleted successfully"
+  planDeletedFail: "Plan deletion failed"
+  planStatusChanged: "Plan status changed successfully"
+ planStatusChangedFail: "Plan status change failed"
